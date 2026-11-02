@@ -1,4 +1,4 @@
-/* plus 5 spaces so far  21:50in video*/
+/* plus 5 spaces so far  27:47in video right after font awesome*/
 
 :root {
   --purple: #7342d6;
@@ -76,7 +76,7 @@ li {
 }
 
 header {
-  height: calc(100vh - 80px);
+  /* height: calc(100vh - 80px); */
 }
 
 .header__container {
@@ -133,3 +133,20 @@ button:active {
 .header__img--wrapper {
   padding: 20px;
 }
+
+.container {
+  padding: 56px;
+} 
+
+.row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* 
+
+HIGHLIGHTS
+
+*/
