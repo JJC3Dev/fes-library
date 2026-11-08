@@ -3,6 +3,7 @@
 :root {
   --purple: #7342d6;
   --bg-purple: rgba(115, 66, 214, 0.1);
+  --white: white;
 }
 * {
   padding: 0;
@@ -132,16 +133,17 @@ button:active {
   border: none;
   /* width: 200px; */
 }
-
+/* girl on books img */
 .header__img--wrapper {
   padding: 20px;
   z-index: 2;
 }
-
+/* why choose library */
 .container {
   padding: 56px;
+  background-color: var(--white);
 }
-
+/* icons */
 .row {
   width: 100%;
   max-width: 1200px;
@@ -154,31 +156,40 @@ HIGHLIGHTS
 
 */
 
+#highlights {
+  position: relative;
+  /* Ensures the pseudo-element positions inside this section */
+}
+
 #highlights::before {
   background: url(assets/wave.svg);
   content: "";
   position: absolute;
-  top: 1px;
-  transform: rotateX(45deg);
-  transform: translateY(600px);
+  top: 0px;
+  transform: translateY(-100%);
   width: 101vw;
   height: 12vw;
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: 2;
+  z-index: 3;
 }
 
 #highlights::after {
-  background: url(assets/wave.svg);
   content: "";
   position: absolute;
-  top: 682px;
-  transform: translateY(100%);
-  width: 101vw;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scaleX(-1);
+  width: 100vw;
   height: 12vw;
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: 2;
+  background-color: var(--bg-purple);
+  -webkit-mask-image: url(assets/wave.svg);
+  mask-image: url(assets/wave.svg);
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  z-index: 3;
 }
 
 .highlight__wrapper {
