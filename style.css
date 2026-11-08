@@ -73,6 +73,7 @@ li {
 
 .nav__link--primary:hover {
   text-decoration: none;
+  border: dotted 2px var(--purple);
 }
 
 #landing {
@@ -120,8 +121,8 @@ button {
   cursor: pointer;
 }
 
-button:active {
-  transform: translateY(1px);
+.btn:hover {
+  transform: scale(102%);
 }
 
 .btn {
@@ -133,6 +134,10 @@ button:active {
   border: none;
   /* width: 200px; */
 }
+.btn:active {
+  background-color: rgb(65, 65, 80);
+}
+
 /* girl on books img */
 .header__img--wrapper {
   padding: 20px;
