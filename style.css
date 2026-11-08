@@ -2,7 +2,7 @@
 
 :root {
   --purple: #7342d6;
-  --bg-purple: rgba(115, 66, 214, 0.1);
+  --bg-purple: rgb(244,241,250);
   --white: white;
 }
 * {
@@ -15,7 +15,13 @@
 nav {
   height: 80px;
   display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background-color: var(--bg-purple); /* Or background-color: white; */
+  border-bottom: 1px solid lightgray;
 }
+
 
 img {
   width: 100%;
@@ -27,6 +33,8 @@ img {
 p {
   line-height: 1.5;
 }
+
+
 .nav__container {
   width: 100%;
   max-width: 1200px;
